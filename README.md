@@ -4,3 +4,8 @@ The AdoLina engine is a centralized AI system designed to manage logistics and s
 ## Deployment
 
 For instructions on how to publish this project online using Azure Web Apps, please refer to the [DEPLOYMENT.md](DEPLOYMENT.md) file.
+
+## API Endpoints
+
+- `GET /`: Returns engine status and available adapters.
+- `GET /health`: System health check.

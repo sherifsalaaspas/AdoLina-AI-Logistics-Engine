@@ -35,3 +35,12 @@ To publish the AdoLina AI Logistics Engine online using Azure Web Apps, follow t
 2.  Go to the **Actions** tab in your GitHub repository to monitor the build and deployment process.
 
 Once the workflow finishes successfully, your application will be live at `https://<your-app-name>.azurewebsites.net`.
+
+## 5. Final Pre-Flight Checklist (The "Remaining Steps")
+If you have completed the Azure and GitHub setup, ensure these final technical points are addressed:
+
+1.  **Workflow Sync**: Confirm that `.github/workflows/azure-webapps-node.yml` contains your actual Azure Web App name instead of the placeholder `'ENTER_YOUR_AZURE_WEB_APP_NAME_HERE'`.
+2.  **Environment Variables**: Go to your Web App in the Azure Portal > **Settings** > **Configuration** > **Application settings** and add any keys defined in `.env.example` (like API keys).
+3.  **Port Configuration**: Azure Linux apps usually use port 80 or 443 externally, but Node.js listens on `process.env.PORT`. The engine is already configured to use `process.env.PORT`, so no change is needed here.
+4.  **Health Check**: After deployment, visit `https://<your-app-name>.azurewebsites.net/health` to verify the system is responding correctly.
+5.  **GitHub Actions Tab**: Check the **Actions** tab in your repository. If you see a green checkmark next to your latest commit, the site is live.
