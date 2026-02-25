@@ -43,5 +43,6 @@ If you have completed the Azure and GitHub setup, ensure these final technical p
 2.  **Environment Variables**: Go to your Web App in the Azure Portal > **Settings** > **Configuration** > **Application settings** and add any keys defined in `.env.example` (like API keys).
 3.  **Port Configuration**: Azure Linux apps usually use port 80 or 443 externally, but Node.js listens on `process.env.PORT`. The engine is already configured to use `process.env.PORT`, so no change is needed here.
 4.  **Health Check**: After deployment, visit `https://<your-app-name>.azurewebsites.net/health` to verify the system is responding correctly.
-5.  **Dependencies**: Ensure that `package-lock.json` is committed to the repository, as the deployment workflow relies on it for caching and consistent builds.
-6.  **GitHub Actions Tab**: Check the **Actions** tab in your repository. If you see a green checkmark next to your latest commit, the site is live.
+5.  **Dashboard**: Access the main URL `https://<your-app-name>.azurewebsites.net` to see the full-stack dashboard.
+6.  **Dependencies**: Ensure that `package-lock.json` is committed to the repository, as the deployment workflow relies on it for caching and consistent builds.
+7.  **GitHub Actions Tab**: Check the **Actions** tab in your repository. If you see a green checkmark next to your latest commit, the site is live.

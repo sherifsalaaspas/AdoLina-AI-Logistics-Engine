@@ -7,5 +7,7 @@ For instructions on how to publish this project online using Azure Web Apps, ple
 
 ## API Endpoints
 
-- `GET /`: Returns engine status and available adapters.
+- `GET /`: Serves the Web Dashboard (HTML) or Engine Status (JSON).
 - `GET /health`: System health check.
+- `GET /api/tasks`: Fetch logistics tasks from the database.
+- `POST /api/tasks`: Create a new logistics task.
