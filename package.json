@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "The AdoLina engine is a centralized AI system designed to manage logistics and support operations through four specialized adapters. AdoLina is an AI-powered engine using four adapters (ILSCHERY, ILSFOLLOWS-UP, ILSDEMAND, and ILSOLUTION) to automate and manage Integrated Logistics Support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherifsalaaspas/AdoLina-AI-Logistics-Engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sherifsalaaspas/AdoLina-AI-Logistics-Engine/issues"
+  },
+  "homepage": "https://github.com/sherifsalaaspas/AdoLina-AI-Logistics-Engine#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
+  }
+}
